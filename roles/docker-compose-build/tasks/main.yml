@@ -1,0 +1,6 @@
+- name: Run docker-compose up
+  command: docker-compose -f docker-compose.yml build
+  environment:
+    VERSION: "{{ build_version }}"
+  args:
+    chdir: "{{ compose_dir }}"

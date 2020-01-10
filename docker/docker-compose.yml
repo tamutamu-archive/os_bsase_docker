@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  build:
+    image: ubuntu_systemd_18.04:${VERSION}
+    build:
+      context: ./

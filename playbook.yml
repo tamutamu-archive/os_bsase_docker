@@ -1,0 +1,6 @@
+- name: Docker Compose up.
+  hosts: localhost
+  become: true
+  gather_facts: false
+  roles:
+    - { role: docker-compose-build, tags: docker }
