@@ -1,5 +1,5 @@
 - name: Run docker-compose up
-  command: docker-compose -f docker-compose.yml build
+  command: docker-compose -f docker-compose.yml build --no-cache
   environment:
     VERSION: "{{ build_version }}"
   args:
